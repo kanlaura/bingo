@@ -1,0 +1,40 @@
+body {
+  padding: 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#bingoCard {
+  display: grid;
+  width: 425px;
+  grid-template-columns: repeat(5, 85px);
+  grid-template-rows: repeat(5, 85px);
+  border: blueviolet solid 2px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  text-align: center;
+}
+
+.numDiv {
+  border-radius: 10px;
+  border: blueviolet solid 1px;
+  cursor: pointer;
+}
+
+
+.numDiv,
+#genNum {
+  font-size: larger;
+  font-weight: bold;
+  color: blueviolet;
+  padding-left: 15px;
+}
