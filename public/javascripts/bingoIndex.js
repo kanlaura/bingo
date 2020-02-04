@@ -21,7 +21,6 @@ function getNumbers() {
         })
         .then(function (json) {
             let numbers = json;
-            console.log(numbers)
 
             for (let i = 0; i < numbers.length; i++) {
                 let newDiv = document.createElement('div')
@@ -41,7 +40,6 @@ function generateNumber() {
         .then(function (json) {
             let call = json;
 
-            console.log(call)
             genNum.innerHTML = `${call}`
         })
 };
@@ -49,8 +47,6 @@ function generateNumber() {
 function checkNumber(event) {
     let testNumber = genNum.innerHTML
     let number = event.target.innerText
-
-    console.dir(number)
 
     fetch(`http://localhost:3000/api/bingo/call/:${number}/:${testNumber}`)
         .then(function (res) {
@@ -62,7 +58,7 @@ function checkNumber(event) {
             if (json == 'error') {
                 errorField.innerHTML = `<p>Try again!!</p>`;
             } else {
-                errorField.innerHTML = ``;
+                errorField.innerHTML = `<p>You are one step closer to victory!</p>`;
                 genNum.innerHTML = `${call}`
                 event.target.style.backgroundColor = "lightblue"
             }

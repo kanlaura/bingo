@@ -3,7 +3,6 @@ var router = express.Router();
 
 var lodash = require('lodash');
 
-
 let bingoOrder;
 
 /* GET users listing. */

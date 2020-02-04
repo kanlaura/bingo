@@ -1,6 +1,9 @@
 body {
+  margin: auto;
+  max-width: 445px;
   padding: 10px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 
 a {
@@ -18,23 +21,38 @@ button {
   width: 425px;
   grid-template-columns: repeat(5, 85px);
   grid-template-rows: repeat(5, 85px);
-  border: blueviolet solid 2px;
-  border-radius: 10px;
+  border: blueviolet solid 4px;
+  border-radius: 15px;
   background-color: aliceblue;
-  text-align: center;
+  align-items: center;
 }
 
 .numDiv {
   border-radius: 10px;
   border: blueviolet solid 1px;
   cursor: pointer;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 
 .numDiv,
 #genNum {
-  font-size: larger;
+  text-align: center;
+  font-size: x-large;
   font-weight: bold;
   color: blueviolet;
+}
+
+#genNum {
   padding-left: 15px;
+}
+
+#errorField{
+  text-align: center;
+  font-size: large;
+}
+
+h1 {
+  font-size: xx-large;
 }
